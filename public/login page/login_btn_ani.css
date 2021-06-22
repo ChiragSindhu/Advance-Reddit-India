@@ -1,0 +1,32 @@
+#login_btn:hover,
+#signin_btn:hover {
+  cursor: pointer;
+}
+
+#fgt:hover {
+  cursor: pointer;
+}
+#fgt:active {
+  color: rgb(196, 196, 196);
+}
+
+input:not(:placeholder-shown) + #label1,
+input:not(:placeholder-shown) + #label2 {
+  animation-name: slide_up;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide_up {
+  0% {
+    left: 16.5px;
+    top: 8px;
+    font-size: 13px;
+  }
+  100% {
+    left: 9px;
+    top: -8px;
+    font-size: 13px;
+  }
+}

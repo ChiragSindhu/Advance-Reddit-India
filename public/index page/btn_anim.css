@@ -1,0 +1,39 @@
+#post_object_likes:hover,
+#post_object_dislikes:hover {
+  background-color: gray;
+}
+
+#username_box:hover {
+  box-shadow: 0.1px 0.1px 4px rgb(206, 206, 206);
+}
+
+#post_object:hover{
+  box-shadow: 0.1px 0.1px 5px rgb(156, 156, 156);
+}
+
+#username_box:active {
+  background-color: rgb(252, 175, 69);
+}
+
+#load_post:hover{
+  background-color: grey;
+  color:white;
+}
+
+#load_post:active {
+  background-color: rgb(100, 180, 25);
+}
+
+#loading_icon {
+  animation: rotate_icon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  margin-bottom: 5rem;
+}
+
+@keyframes rotate_icon {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

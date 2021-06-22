@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="/image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Reddit India</title>
+    <!--Linking stylesheets-->
+    <link rel="stylesheet" href="/login page/style1.css">
+    <link rel="stylesheet" href="/login page/style2.css">
+    <link rel="stylesheet" href="/login page/login_btn_ani.css">
+
+    <!--linking Java Scripts-->
+    <script src="/login page/script.js"></script>
+
+    <!--Google Fonts links-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!--Google Javascript library link-->
+    <!--For Sign in button in google-->
+    <meta name="google-signin-client_id" content="988804087054-hffmhskfrmmf81uq2tsa92b8tj58hngf.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Face book Javascript library link-->
+    <!--For sign in-->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+    <!-- FireBase DB -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <!--Connection-->
+    <script src="/firebase/conn_db.js"></script>
+
+</head>
+<body>
+    <div id="head">
+        <div id="login_head">
+            <div id="title1"><span id="cap">R</span>eddit India</div>
+            <div id="user_field">
+                <input type="text" placeholder="" id="field" oninput="typing()">
+                <span id="label1">Username or email</span>
+            </div>
+            <div id="password_field">
+                <input type="password" placeholder="" id="pass_field" oninput="pass_show_hide(),typing()">
+                <span id="label2">Password</span>
+                <span id="show_hide" onclick="show_hide_func()">Show</span>
+            </div>
+            <div id="submit_btn">
+                <input type="button" value="Log In" id="login_btn" onclick="login_account()">
+                <span id="load_icon"><img src="/image/icons/loading.jpg" id="img" width="24px" height="24px"></span>
+            </div>
+            <div id="fgt" onclick="fgt()">
+                forgot password?
+            </div>
+            <div id="errors"></div>
+        </div>
+        <div id="login_with_diff_accounts">
+            <div id="space"></div>
+            <!--Facebook button-->
+            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="default"
+                 data-auto-logout-link="false" data-use-continue-as="false"></div>
+
+            <div id="space"></div>
+            <!--Google button data-width="175" data-height="30" data-longtitle="true"-->
+            <div class="g-signin2" data-onsuccess="onSignIn" data-width="175" data-height="30" data-longtitle="true"></div>
+            <!--Development Account For signing out-->
+            <!--<a href="#" onclick="signOut();">Sign out</a>-->
+
+            <div id="space"></div>
+        </div>
+        <div id="alrdy_created">
+            <div id="title3">Don't have an account? 
+                <span id="signin_btn" onclick="goto_signup()">Sign up</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

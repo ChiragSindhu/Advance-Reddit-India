@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="/image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+
+    <!--Linking Css style file-->
+    <link rel="stylesheet" href="/forget password page/style1.css">
+    <link rel="stylesheet" href="/forget password page/style2.css">
+
+    <!--Linking Script files-->
+    <script src="/forget password page/script1.js"></script>
+
+    <!--Linking google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="head">
+        <div id="login_head">
+            <div id="title1"><span id="cap1">R</span>eddit India</div>
+            <div id="seperator"><span id="hr1"></span><span id="hr2"></span></div>
+            <div id="title2"><span id="cap2">R</span>eset <span id="cap2">P</span>assword</div>
+            <div id="content1">
+                Please enter your email address to request a password reset.
+            </div>
+            <div id="emailfield">
+                <input type="text" placeholder="" id="field" oninput="typing()">
+                <span id="label1">Email</span>
+                <span id="check_icon1"><img src="/image/icons/check.png" width=20px height=20px></span>
+                <span id="check_icon2"><img src="/image/icons/remove.png" width=20px height=20px></span>
+                <span id="submit_btn">
+                    <input type="button" value="Send Code" id="send_code" onclick="readytosendmail()">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

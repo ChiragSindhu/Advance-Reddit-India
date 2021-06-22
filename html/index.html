@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="/image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Reddit India</title>
+
+    <!--Linking stylesheet css-->
+    <link rel="stylesheet" href="/index page/style1.css">
+    <link rel="stylesheet" href="/index page/style2.css">
+    <link rel="stylesheet" href="/index page/btn_anim.css">
+
+    <!--Linking Script files-->
+    <script src="/index page/script1.js"></script>
+    <script src="/index page/like_dislike.js"></script>
+
+    <!--Linking User Editable file-->
+    <script src="/User Explorer/script1.js"></script>
+    <script src="/User Explorer/script2.js"></script>
+    <link rel="stylesheet" href="/User Explorer/style1.css">
+    <link rel="stylesheet" href="/User Explorer/style2.css">
+    <link rel="stylesheet" href="/User Explorer/anim.css">
+
+    <!--Google fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- FireBase DB -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    
+    <!--Connection-->
+    <script src="/firebase/conn_db.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <span id="title1" onclick="homepage()">
+            <span id="cap">R</span>eddit
+            <span id="cap">I</span>ndia
+        </span>
+        <span id="search_user">
+            <input type="text" placeholder="search user" id="search_field" oninput="typing_search()" onfocus="si_anim1()" onfocusout="si_anim2()" list="search_result">
+            <span id="search_icon" onmouseover="si_chnge_css1()" onmouseout="si_chnge_css2()" onclick="search_user()">
+                <img src="/image/icons/loupe.png" width="14px" height="14px">
+            </span>
+            <div id="search_result"></div>
+        </span>
+    </div>
+    <div id="posts"></div>
+    <div id="username_id" onclick="myprofile()"></div>
+    <div id="userContent">
+        <input id="ContentProfile" type="button" value="Home" onclick="homepage()">
+        <input id="ContentProfile" type="button" value="Profile" onclick="myprofile()">
+        <input id="ContentProfile" type="button" value="Create a post" onclick="createpost()">
+        <input id="ContentProfile" type="button" value="Log out" onclick="logout()">
+    </div>
+</body>
+</html>

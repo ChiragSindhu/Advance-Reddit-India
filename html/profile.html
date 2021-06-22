@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="/image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!--Linking Script files-->
+    <script src="/profile/script1.js"></script>
+    <script src="/profile/script2.js"></script>
+
+    <!--Linking Stylesheet file-->
+    <link rel="stylesheet" href="/profile/style1.css">
+    <link rel="stylesheet" href="/profile/anim.css">
+
+    <!--Linking User Editable file-->
+    <script src="/User Explorer/script1.js"></script>
+    <script src="/User Explorer/script2.js"></script>
+    <link rel="stylesheet" href="/User Explorer/style1.css">
+    <link rel="stylesheet" href="/User Explorer/style2.css">
+    <link rel="stylesheet" href="/User Explorer/anim.css">
+
+    <!--Google fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">  
+
+    <!-- FireBase DB -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    
+    <!--Connection-->
+    <script src="/firebase/conn_db.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <span id="title1" onclick="homepage()">
+            <span id="cap">R</span>eddit
+            <span id="cap">I</span>ndia
+        </span>
+        <span id="search_user">
+            <input type="text" placeholder="search user" id="search_field" oninput="typing_search()" onfocus="si_anim1()" onfocusout="si_anim2()" list="search_result">
+            <span id="search_icon" onmouseover="si_chnge_css1()" onmouseout="si_chnge_css2()" onclick="search_user()">
+                <img src="/image/icons/loupe.png" width="14px" height="14px">
+            </span>
+            <div id="search_result"></div>
+        </span>
+    </div>
+    <div id="profileTAB">
+        <img id="userProfilePicIMG" width="96px" height="96px" onclick="show_floater()">
+        <u><div id="profileTABtitle"></div></u>
+        <div id="emailTAB">
+            <span id="profilelabel">Email </span><input type="text" class="field" id="email_field" readonly>
+        </div>
+        <div id="passwordTAB">
+            <span id="profilelabel">Password </span><input type="text" class="field" id="password_field" readonly><input type="button" id="edit_btn" value="edit" onclick="changePass()">
+        </div>
+    </div>
+    <div id="postTAB">
+        
+    </div>
+    <div id="username_id" onclick="myprofile()"></div>
+    <div id="userContent">
+        <input id="ContentProfile" type="button" value="Home" onclick="homepage()">
+        <input id="ContentProfile" type="button" value="Profile" onclick="myprofile()">
+        <input id="ContentProfile" type="button" value="Create a post" onclick="createpost()">
+        <input id="ContentProfile" type="button" value="Log out" onclick="logout()">
+    </div>
+    <div id="change_PPfloaters" onclick="hide_floater(event)">
+        <div id="headerfloater">
+            <div id="change_PPfloaterstitle">
+                Change your Profile Picture
+            </div>
+            <div id="change_PPfloatersbtn">
+                <input type="button" id="ChangeFloaterbtn" value="View" onclick="viewPP()">
+                <label for="pp_file" id="ChangeFloaterbtn1">Change</label>
+                <input type="file" id="pp_file" onchange="updatePP()">
+                <img src="/image/icons/cancel.png" width=17px height=17px id="ChangeFloaterbtn2" onclick="hide_floater(event)">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

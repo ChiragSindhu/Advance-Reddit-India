@@ -1,0 +1,79 @@
+#title1:hover {
+  color: gray;
+}
+
+#title1:active {
+  color: rgb(71, 71, 71);
+}
+
+#nav:hover {
+  box-shadow: 0.1px 0.1px 10px gray;
+}
+
+#search_field:hover {
+  box-shadow: 0.1px 0.1px 4px rgb(224, 224, 224);
+}
+
+#search_field:focus {
+  outline: dashed 1px gray;
+}
+
+#search_loading_icon {
+  margin-left: 41%;
+  animation: rotate_icon;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#username_id:hover{
+    box-shadow: 0.1px 0.1px 5px rgb(138, 138, 138);
+}
+
+#username_id:active{
+  background-color: gray;
+  color:white;
+}
+
+#ContentProfile:hover{
+    box-shadow: 0.1px 0.1px 2px rgb(77, 77, 77);
+    font-weight: 700;
+    background-color: rgb(221, 239, 248);
+    color:rgb(44, 160, 196);
+}
+
+#ContentProfile:active{
+    background-color: rgb(112, 169, 255);
+    color:whitesmoke;
+    border:none;
+}
+
+@keyframes rotate_icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide_right {
+    0% {
+        left: -25px;
+    }
+
+    100% {
+        left: 5px;
+    }
+}
+
+@keyframes slide_left {
+    0% {
+        left: 5px;
+    }
+
+    100% {
+        left: -25px;
+    }
+}

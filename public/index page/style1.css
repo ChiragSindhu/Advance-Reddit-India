@@ -1,0 +1,10 @@
+body {
+  overflow-x: hidden;
+}
+
+#posts {
+  width: 35%;
+  height: max-content;
+  position: relative;
+  margin: 10px 10px 10px 17%;
+}

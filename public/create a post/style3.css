@@ -1,0 +1,27 @@
+#title1:hover {
+  color: gray;
+}
+
+#title1:active {
+  color: rgb(71, 71, 71);
+}
+
+#nav:hover {
+  box-shadow: 0.1px 0.1px 10px gray;
+}
+
+#text{
+  position: relative;
+}
+
+#text_option{
+  position: absolute;
+  top:10px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width:95%;
+  background-color: rgb(243, 243, 243);
+  margin-left:2%;
+}

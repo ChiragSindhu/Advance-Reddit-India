@@ -1,0 +1,109 @@
+#title2 {
+  font-family: "Eczar", serif;
+  font-size: 27px;
+  font-weight: 900;
+  color: rgb(83, 83, 83);
+}
+
+#seperator {
+  width: 100%;
+  background-color: green;
+  height: 1px;
+  border-radius: 5px;
+}
+
+#upload_photo {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(190, 190, 190);
+  border-radius: 5px;
+  background-color: rgb(236, 236, 236);
+}
+
+#uplphoid {
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+#textfield {
+  width: 98%;
+  resize: none;
+  user-select: text;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: solid 1px rgb(175, 175, 175);
+  padding: 18px 5px 5px 5px;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  height: 6rem;
+}
+
+#upload_photo_title {
+  background-color: rgb(64, 93, 230);
+  padding: 10px;
+  font-family: "Nanum", sans-serif;
+  width: 20%;
+  border-radius: 4px;
+  color: aliceblue;
+  overflow-x: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+#post_div {
+  position: relative;
+  margin: 8px 0px 2rem 0px;
+}
+
+#post_btn {
+  color: aliceblue;
+  padding: 2px;
+  position: absolute;
+  right: 5px;
+  border: solid 1px rgb(211, 211, 211);
+  background-color: rgb(225, 48, 108);
+  border-radius: 5px;
+  font-size: 18px;
+  width: 12%;
+  cursor: pointer;
+}
+
+#progress_bar {
+  position: absolute;
+  left: 2rem;
+  top: 10px;
+  width: 75%;
+  height: 5px;
+  background-color: rgb(37, 201, 32);
+}
+
+#progress_title {
+  position: absolute;
+  left: -2.2rem;
+  top: -8px;
+
+  font-size: 13px;
+  color: rgb(110, 110, 110);
+  background-color: rgb(51, 219, 163);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#loading_icon {
+  position: absolute;
+  right: 2rem;
+  top: 4px;
+  animation: rotate_icon;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

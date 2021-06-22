@@ -1,0 +1,21 @@
+#post_btn:active {
+  background-color: gray;
+}
+
+#upload_photo_title:hover {
+  box-shadow: 0.1px 0.1px 0.1px 3px rgb(173, 232, 250);
+  text-shadow: 1px 5px rgb(133, 133, 133);
+}
+
+#upload_photo_title:active {
+  background-color: rgb(65, 19, 173);
+}
+
+@keyframes rotate_icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

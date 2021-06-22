@@ -1,0 +1,166 @@
+#title1 {
+  background-color: rgb(255, 255, 255);
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(65, 65, 65);
+
+  padding: 10px 0 10px 0;
+}
+
+#field,
+#pass_field,
+#name_field,
+#username_field {
+  width: 18rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 5px 15px 2px 15px;
+
+  border: solid 1px rgb(223, 223, 223);
+  font-size: 13px;
+  font-family: "Hind", sans-serif;
+}
+
+#field,
+#username_field,
+#name_field {
+  /*User can select field*/
+  user-select: auto;
+}
+
+#user_name_field {
+  position: relative;
+}
+
+#field:focus,
+#pass_field:focus,
+#username_field:focus,
+#name_field:focus {
+  outline: dashed 2px rgb(218, 218, 218);
+}
+
+#user_field {
+  border: none;
+  margin-top: 15px;
+  position: relative;
+}
+
+#password_field,
+#user_name_field,
+#fullname_field {
+  border: none;
+  margin-top: 8px;
+  position: relative;
+}
+
+#cap {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+#signup_btn {
+  width: 20rem;
+  height: 2rem;
+  margin: 14px 0px 14px 0px;
+
+  border-radius: 5px;
+  background-color: rgb(122, 141, 228);
+  border: none;
+
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/*Changing background to white*/
+#submit_btn,
+#signin_btn,
+#cap,
+#seperator,
+#login_btn {
+  background-color: white;
+}
+
+#label1,
+#label2,
+#label3,
+#label4 {
+  pointer-events: none;
+  position: absolute;
+  left: 16.5px;
+  top: 8px;
+  font-size: 13px;
+  font-family: "Hind", sans-serif;
+  color: rgb(128, 128, 128);
+  background: linear-gradient(180deg, #ffffff, rgba(255, 0, 0, 0));
+}
+
+#show_hide {
+  cursor: pointer;
+  position: absolute;
+  right: 16.5px;
+  top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Hind", sans-serif;
+  color: rgb(63, 63, 63);
+}
+
+#content1 {
+  background-color: white;
+  color: rgb(126, 126, 126);
+  font-size: 18px;
+  font-family: "Alfa Slab One", cursive;
+  margin: 0px 0px 15px 0px;
+  border-bottom: 1px;
+}
+
+#space {
+  margin-top: 10px;
+}
+
+#seperator {
+  font-family: "Hind", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(139, 139, 139);
+  position: relative;
+}
+
+#load_icon {
+  position: absolute;
+  top: 27%;
+  left: 46%;
+  transform: translate(-50px, -50px);
+  background-color: rgb(64, 93, 230);
+  border-radius: 50%;
+
+  animation: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#submit_btn {
+  position: relative;
+}
+
+#img {
+  background-color: rgb(64, 93, 230);
+  border-radius: 50%;
+}
+
+#error {
+  font-size: 13px;
+  color: brown;
+}

@@ -1,0 +1,85 @@
+#title1 {
+  background-color: rgb(255, 255, 255);
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(65, 65, 65);
+
+  padding: 10px 0 10px 0;
+}
+
+#cap1 {
+  font-size: 55px;
+  font-weight: 500;
+  background-color: white;
+}
+
+#title2 {
+  font-size: 22px;
+  font-family: "Roboto Mono", monospace;
+  background-color: white;
+  font-weight: 100;
+  margin-top: 15px;
+}
+
+#cap2 {
+  font-size: 26px;
+  font-family: "Roboto Mono", monospace;
+  background-color: white;
+  font-weight: 900;
+}
+
+#content1 {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(54, 54, 54);
+
+  padding: 50px;
+}
+
+#seperator {
+  position: relative;
+}
+
+#hr1 {
+  position: absolute;
+  height: 1px;
+  width: 150px;
+  right: 0px;
+  background-color: rgb(139, 139, 139);
+}
+
+#hr2 {
+  position: absolute;
+  height: 1px;
+  width: 150px;
+  left: 0px;
+  background-color: rgb(139, 139, 139);
+}
+
+/*For change bacground to white*/
+#content1,
+#email_name {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#email_name {
+  font-weight: 600;
+}
+
+#nym {
+  width: 20rem;
+  height: 2rem;
+  margin: 14px 0px 14px 0px;
+
+  border-radius: 5px;
+  background-color: rgb(64, 93, 230);
+  border: none;
+
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}

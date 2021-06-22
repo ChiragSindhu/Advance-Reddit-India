@@ -1,0 +1,78 @@
+#post_object {
+  font-family: "Nanum Gothic", sans-serif;
+  border-radius: 3px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  background-color: rgb(250, 250, 250);
+  border: solid 1px rgb(240, 240, 240);
+  transition: box-shadow 0.3s;
+}
+
+#post_object_title1 {
+  font-size: 20px;
+  background-color: rgb(88, 81, 216);
+  color: rgb(255, 255, 255);
+  padding: 5px 0px 1px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#post_object_img {
+  padding: 5px 0px 5px 0px;
+  border: solid 0.5px rgb(220, 220, 220);
+  background-color: rgb(252, 252, 252);
+  margin: 3px 0px 3px 0px;
+}
+
+#post_object_likes {
+  padding: 5px;
+  border: none;
+  background-color: rgb(189, 189, 189);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.2s;
+}
+
+#post_object_dislikes {
+  padding: 5px;
+  border: none;
+  background-color: rgb(192, 192, 192);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#username_box {
+  position: relative;
+  left: 35%;
+  top: -4px;
+
+  border: 1px solid rgb(197, 197, 197);
+  padding: 5px;
+  border-radius: 3px;
+
+  background-color: white;
+  cursor: pointer;
+}
+
+#load_post{
+  margin-bottom: 5rem;
+  padding:5px;
+  border:0.1px dotted gray;
+  background-color: rgba(194, 194, 194,0.8);
+  border-radius:10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#noContent{
+  margin: 5px 0px 5rem 21%;
+  background-color: rgb(214, 214, 214);
+  width:15rem;
+  padding:5px;
+}

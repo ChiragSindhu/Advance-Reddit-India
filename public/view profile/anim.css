@@ -1,0 +1,15 @@
+#post_object:hover {
+    box-shadow: 0.1px 0.1px 5px rgb(156, 156, 156);
+}
+
+#loading_icon{
+    animation: rotate_icon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate_icon{
+    100%{
+        transform: rotate(360deg);
+    }
+}
