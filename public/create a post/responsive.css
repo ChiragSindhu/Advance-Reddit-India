@@ -1,0 +1,14 @@
+@media only screen and (max-width: 700px) {
+    #post{
+        margin-left: 2%;
+        width:90%;
+    }
+
+    #post_btn{
+        width: 16%;
+    }
+
+    #loading_icon{
+        right:1.5rem;
+    }
+}

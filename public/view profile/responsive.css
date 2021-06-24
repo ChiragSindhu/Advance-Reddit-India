@@ -1,0 +1,10 @@
+@media only screen and (max-width: 700px) {
+    #profileTAB,
+    #postTAB {
+        width:80%;
+    }
+
+    #post_object{
+        width:90%;
+    }
+}

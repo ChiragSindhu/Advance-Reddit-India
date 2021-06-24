@@ -64,7 +64,8 @@ async function post_subject(username,url,time) {
         text: text,
         likes: 0,
         dislikes: 0,
-        likesData: {}
+        likesData: {},
+        comments: {}
     };
 
     await database.collection('GlobalPOST').doc(username + time).set(post_data);
@@ -87,6 +88,7 @@ function make_style(code) {
 
     var start = field.selectionStart;
     var finish = field.selectionEnd;
+    console.log(start + " : " + finish);
     var userSelection = field.value.substring(start, finish);
         
     if (userSelection.length == 0) {
@@ -94,13 +96,16 @@ function make_style(code) {
         return;
     }
 
-    if (code.value == "Bold")
-        field.value = field.value.replace(userSelection, "<b>" + userSelection + "</b>");
+    if (code.value == "Bold") 
+        field.value = field.value.substring(0, start) + "<b>" + field.value.substring(start, finish) + "</b>" + field.value.substring(finish);
     else if (code.value == "Italic")
-        field.value = field.value.replace(userSelection, "<i>" + userSelection + "</i>");
+        field.value = field.value.substring(0, start) + "<i>" + field.value.substring(start, finish) + "</i>" + field.value.substring(finish);
     else if (code.value == "Underline")
-        field.value = field.value.replace(userSelection, "<u>" + userSelection + "</u>");
+        field.value = field.value.substring(0, start) + "<u>" + field.value.substring(start, finish) + "</u>" + field.value.substring(finish);
+    else if (code.value == "Superscript")
+        field.value = field.value.substring(0, start) + "<sup>" + field.value.substring(start, finish) + "</sup>" + field.value.substring(finish);
+    else if (code.value == "Subscript")
+        field.value = field.value.substring(0, start) + "<sub>" + field.value.substring(start, finish) + "</sub>" + field.value.substring(finish);
     else
         console.log("Code is wrong!!");
 }
-

@@ -1,0 +1,18 @@
+@media only screen and (max-width: 700px) {
+    #login_head,
+    #login_with_diff_accounts,
+    #alrdy_created {
+        width: 90vw;
+        margin: 0px;
+        border:none;
+    }
+
+    #field,
+    #pass_field{
+        width: 15rem;
+    }
+
+    #login_btn{
+        width: 18rem;
+    }
+}

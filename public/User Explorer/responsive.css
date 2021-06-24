@@ -1,0 +1,35 @@
+@media only screen and (max-width: 700px) {
+    #username_id {
+        display: none;
+    }
+
+    #userContent{
+        position: sticky;
+        bottom:0px;
+        flex-direction: row;
+        left:0px;
+        height:30px;
+        width:100vw;
+        justify-content:space-between;
+    }
+
+    #ContentProfile{
+        width: calc(100vw/4);
+        border-radius: 10px;
+    }
+
+    #title1{
+        left: 5%;
+    }
+    #search_user{
+        left:15%;
+    }
+    #search_field {
+        left:0%;
+        width: 25%;
+    }
+
+    #search_result{
+        width:25%;
+    }
+}

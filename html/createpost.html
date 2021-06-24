@@ -8,13 +8,14 @@
     <title>Create a post</title>
 
     <!--Linking stylesheet css-->
-    <link rel="stylesheet" href="create a post/style1.css">
-    <link rel="stylesheet" href="create a post/style2.css">
-    <link rel="stylesheet" href="create a post/style3.css">
-    <link rel="stylesheet" href="create a post/btn_anim.css">
+    <link rel="stylesheet" href="/create a post/style2.css">
+    <link rel="stylesheet" href="/create a post/style3.css">
+    <link rel="stylesheet" href="/create a post/btn_anim.css">
+    <link rel="stylesheet" href="/create a post/style1.css">
+    <link rel="stylesheet" href="/create a post/responsive.css">
 
     <!--Linking Script files-->
-    <script src="create a post/script1.js"></script>
+    <script src="/create a post/script1.js"></script>
 
     <!--Linking User Editable file-->
     <script src="/User Explorer/script1.js"></script>
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="/User Explorer/style1.css">
     <link rel="stylesheet" href="/User Explorer/style2.css">
     <link rel="stylesheet" href="/User Explorer/anim.css">
+    <link rel="stylesheet" href="/User Explorer/responsive.css">
 
     <!--Google fonts link-->
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
@@ -56,9 +58,11 @@
         <div id="text">
             <textarea  id="textfield" cols="5" maxlength="280" placeholder="Your Caption here"></textarea>
             <span id="text_option">
-                    <input type="button" value="Bold" onclick="make_style(this)">
-                    <input type="button" value="Italic" onclick="make_style(this)">
-                    <input type="button" value="Underline" onclick="make_style(this)">
+                    <input id="add_style_btn" type="button" value="Bold" onclick="make_style(this)">
+                    <input id="add_style_btn" type="button" value="Italic" onclick="make_style(this)">
+                    <input id="add_style_btn" type="button" value="Underline" onclick="make_style(this)">
+                    <input id="add_style_btn" type="button" value="Superscript" onclick="make_style(this)">
+                    <input id="add_style_btn" type="button" value="Subscript" onclick="make_style(this)">
             </span>
         </div>
         <div id="upload_photo">

@@ -38,10 +38,10 @@
   margin-top: 8px;
   margin-bottom: 10px;
   border: solid 1px rgb(175, 175, 175);
-  padding: 18px 5px 5px 5px;
+  padding: 40px 5px 5px 5px;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
-  height: 6rem;
+  height: 8rem;
 }
 
 #upload_photo_title {

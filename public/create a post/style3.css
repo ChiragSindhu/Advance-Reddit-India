@@ -16,12 +16,30 @@
 
 #text_option{
   position: absolute;
-  top:10px;
+  top:13px;
   display:flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:left;
   align-items: center;
   width:95%;
-  background-color: rgb(243, 243, 243);
+  background-color: rgba(199, 199, 199,0.5);
   margin-left:2%;
+  padding: 5px 0px 5px 0px;
+  border-bottom: 5px solid rgb(214, 199, 58);
+}
+
+#add_style_btn{
+  padding:2px;
+  border:none;
+  border-radius: 2px;
+
+  background-color: gray;
+  font-weight: bolder;
+  color: white;
+
+  cursor: pointer;
+
+  margin:0px 2px 0px 2px;
+
+  transition: background-color 0.2s, color 0.2s;
 }

@@ -1,0 +1,20 @@
+@media only screen and (max-width: 700px) {
+    #head,
+    #login_head,
+    #alrdy_have_account {
+        width: 92vw;
+        margin: 0px;
+        border:none;
+    }
+
+    #field,
+    #pass_field,
+    #name_field,
+    #username_field {
+        width: 15rem;
+    }
+
+    #signup_btn {
+        width: 18rem;
+    }
+}

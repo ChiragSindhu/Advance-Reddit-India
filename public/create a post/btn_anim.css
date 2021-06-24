@@ -19,3 +19,12 @@
     transform: rotate(360deg);
   }
 }
+
+#add_style_btn:hover{
+  background-color: rgb(185, 185, 185);
+}
+
+#add_style_btn:active {
+  background-color: rgb(214, 199, 58);
+  color:black;
+}

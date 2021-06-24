@@ -49,8 +49,18 @@ function search_user() {
 
 function search_user2(username) {
     //console.log(username.attributes[1]);
+    //console.log(username);
     if (username.attributes[1].value.length != 0) username = username.attributes[1].value;
 
+    console.log("Searched for " + username);
+    window.open("http://localhost:3000/viewprofile?username=" + username, "_black").focus();
+}
+
+function search_user3(username) {
+    //console.log(username.attributes[1]);
+    console.log(username.innerText);
+    username = username.innerText;
+    
     console.log("Searched for " + username);
     window.open("http://localhost:3000/viewprofile?username=" + username, "_black").focus();
 }

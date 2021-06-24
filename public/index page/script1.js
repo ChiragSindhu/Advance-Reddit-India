@@ -48,9 +48,9 @@ async function load_post() {
         //console.log("like : " + isAlreadyLiked + " ; dislike : " + isAlreadyDisliked);
 
         if (isAlreadyLiked) {
-            post_HTML += "<br><input id=\"post_object_likes\" style=\"background-color:rgb(225, 48, 108);\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\"type=\"button\" onclick=\"likeClicked(this);\" value=\"&#10084 " + post_data.likes;
+            post_HTML += "<br><input id=\"post_object_likes\" style=\"background-color:rgb(225, 48, 108);margin-top:5px;\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\"type=\"button\" onclick=\"likeClicked(this);\" value=\"&#10084 " + post_data.likes;
         } else {
-            post_HTML += "<br><input id=\"post_object_likes\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\"type=\"button\" onclick=\"likeClicked(this);\" value=\" " + post_data.likes;
+            post_HTML += "<br><input id=\"post_object_likes\" style=\"margin-top:5px;\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\"type=\"button\" onclick=\"likeClicked(this);\" value=\" " + post_data.likes;
         }
 
         if(post_data.likes > 1)
@@ -59,14 +59,27 @@ async function load_post() {
             post_HTML += " Like\">";
         
         if(isAlreadyDisliked)
-            post_HTML += "<input id=\"post_object_dislikes\" style=\"background-color:rgb(131, 58, 180);\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\" type=\"button\" onclick=\"dislikeClicked(this);\" value=\"🖕 " + post_data.dislikes;
+            post_HTML += "<input id=\"post_object_dislikes\" style=\"background-color:rgb(131, 58, 180);margin-top:5px;\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\" type=\"button\" onclick=\"dislikeClicked(this);\" value=\"🖕 " + post_data.dislikes;
         else
-            post_HTML += "<input id=\"post_object_dislikes\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\" type=\"button\" onclick=\"dislikeClicked(this);\" value=\" " + post_data.dislikes;
+            post_HTML += "<input id=\"post_object_dislikes\" style=\"margin-top:5px;\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\" type=\"button\" onclick=\"dislikeClicked(this);\" value=\" " + post_data.dislikes;
         
         if(post_data.dislikes > 1)
             post_HTML += " Dislikes\">";
         else
             post_HTML += " Dislike\">";
+        
+        post_HTML += "</div>";
+        post_HTML += "<div id=\"add_comment\" name=\"" + post_data.Username + new Date(post_data.timestamp.seconds * 1000) + "\">";
+        post_HTML += "<div id=\"comment_title\">Comments";
+        post_HTML += "</div>";
+        post_HTML += "<div id=\"all_comments\"></div>";
+        post_HTML += "<div id=\"add_section\">";
+        post_HTML += "<input type=\"text\" id=\"addCom_text\" placeholder=\"Add comment...\">";
+        post_HTML += "<input type=\"button\" id=\"addCom_btn\" value=\"comment\" onclick=\"add_comment(this)\">";
+        post_HTML += "<img src=\"/image/icons/loading.jpg\" onload=\"add_commentONLOAD(this);\" width=100px height=132px>";
+        //post_HTML += "<script>alert(\"yo\");</script>"
+        post_HTML += "</div>";
+        post_HTML += "</div>";
 
         post_ele.innerHTML += post_HTML;
     });
